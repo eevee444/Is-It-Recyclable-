@@ -13,4 +13,6 @@ var material = input("What is your trash item made of?")
  } else {
     print("Unknown. Put your item in the landfill just to be safe.")
     }
+/* Potential additions:
+- camera support so users can take photos of their item and have the app assess the material in the image to classify it*/
 
