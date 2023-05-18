@@ -1,14 +1,14 @@
 // defines lists of recyclable, compostable and landfill items
 var recyclableItems = ["metal", "glass", "paper"]
-var compostableItems = ["food", "soiledPaper"]
+var compostableItems = ["food", "soiled paper"]
 var landfillItems = ["plastic"]
 // asks user for material of their item
-var material = input("What is your trash item made of?")
- if material in recyclableItems {
+var material = String(readLine("What is your trash item made of?")!)!
+ if material == "metal" or material == "glass" or material == "paper" {
     print("Your item can be recycled.")
- } elif material in compostableItems {
+ } elif material == "food" or material == "soiled paper" {
     print("Your item can be composted.")
- } elif material in landfillItems {
+ } elif material == "plastic" {
     print("Your item goes in the landfill.")
  } else {
     print("Unknown. Put your item in the landfill just to be safe.")
